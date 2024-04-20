@@ -5,15 +5,13 @@ import base64
 # Function to create collapsible tree structure
 def create_tree_structure():
     nodes = [
-        {"label": "how to make a youtube video",
-         "value": "folder_a"},
         {
-            "label": "Folder B",
+            "label": "YouTube",
             "value": "folder_b",
             "children": [
-                {"label": "Sub-folder A", "value": "sub_a"},
-                {"label": "Sub-folder B", "value": "sub_b"},
-                {"label": "Sub-Folder C", "value": "sub_c"},
+                {"label": "How to make a YouTube video", "value": "sub_a"},
+                {"label": "How to create a YouTube account", "value": "sub_b"},
+                {"label": "How to publish your videos", "value": "sub_c"},
             ],
         },
         {
