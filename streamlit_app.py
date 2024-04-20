@@ -54,7 +54,7 @@ def main():
             """
             <style>
             body {
-                background-image: url("static/rainbow_nonsense.png");
+                background-image: url("weezer/static/rainbow_nonsense.png");
                 background-size: cover;
             }
             </style>
