@@ -66,8 +66,19 @@ def main():
     if kids_mode:
         st.write("Kids mode activated!")
         # sidebar_bg('./app/static/rainbow_nonsense.png')
-        with st.echo():
-            st.markdown("[![Click me](./app/static/rainbow_nonsense.png)](https://streamlit.io)")
+        # with st.echo():
+        #     st.markdown("[![Click me](./app/static/rainbow_nonsense.png)](https://streamlit.io)")
+        st.markdown(
+            """
+            <style>
+            body {
+                background-image: url("./app/static/rainbow_nonsense.png");
+                background-size: cover;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
     # Search bar
     search_query = st.text_input("Search for files")
