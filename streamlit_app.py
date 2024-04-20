@@ -54,7 +54,7 @@ def main():
             """
             <style>
             body {
-                background-image: url("static/rainbow_nonsense.png");
+                background-image: url("weezer/static/rainbow_nonsense.png");
                 background-size: cover;
             }
             </style>
@@ -65,7 +65,7 @@ def main():
         with st.echo():
             st.title("CAT")
 
-            st.markdown("[![Click me](static/rainbow_nonsense.png)](https://streamlit.io)")
+            st.markdown("[![Click me](weezer/static/rainbow_nonsense.png)](https://streamlit.io)")
 
     # Search bar
     search_query = st.text_input("Search for files")
