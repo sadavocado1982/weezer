@@ -1,5 +1,5 @@
 import streamlit as st
-
+from streamlit_tree_select import tree_select
 
 # Function to create collapsible tree structure
 def create_tree_structure():
@@ -56,7 +56,7 @@ def main():
     search_query = st.text_input("Search for files")
 
     # Create collapsible tree structure
-    return_select = create_tree_structure()
+    return_select = tree_select(create_tree_structure())
     st.write(return_select)
 
     # Handle double-click events
