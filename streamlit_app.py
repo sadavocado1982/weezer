@@ -65,7 +65,7 @@ def main():
         with st.echo():
             st.title("CAT")
 
-            st.markdown("[![Click me](weezer/static/rainbow_nonsense.png)](https://streamlit.io)")
+            st.markdown("[![Click me](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fcolorful-pastel-rainbow-with-clouds_33447209.htm&psig=AOvVaw2guP9sierJw54l7Ysj9A8V&ust=1713716081706000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDs3oWY0YUDFQAAAAAdAAAAABAE)](https://streamlit.io)")
 
     # Search bar
     search_query = st.text_input("Search for files")
