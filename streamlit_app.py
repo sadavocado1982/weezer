@@ -65,7 +65,7 @@ def main():
     # Update background and add smiling clouds if kids mode is activated
     if kids_mode:
         st.write("Kids mode activated!")
-        sidebar_bg('static/rainbow_nonsense.png')
+        sidebar_bg('./app/static/rainbow_nonsense.png')
 
     # Search bar
     search_query = st.text_input("Search for files")
