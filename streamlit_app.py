@@ -62,6 +62,11 @@ def main():
             unsafe_allow_html=True,
         )
 
+        with st.echo():
+            st.title("CAT")
+
+            st.markdown("[![Click me](static/rainbow_nonsense.png)](https://streamlit.io)")
+
     # Search bar
     search_query = st.text_input("Search for files")
 
