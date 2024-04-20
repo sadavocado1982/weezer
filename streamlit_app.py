@@ -54,7 +54,7 @@ def main():
             """
             <style>
             body {
-                background-image: url("weezer/static/rainbow_nonsense.png");
+                background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FiwbwTwR_rainbow-cloud-clip-art-rainbow-with-sun-and%2F&psig=AOvVaw3QUnNtxYc7hv_qDOEA_07p&ust=1713714042979000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODSlsuQ0YUDFQAAAAAdAAAAABAZ");
                 background-size: cover;
             }
             </style>
