@@ -15,7 +15,7 @@ def create_tree_structure():
             ],
         },
         {
-            "label": "Folder C",
+            "label": "how to cook a cake!",
             "value": "folder_c",
             "children": [
                 {"label": "Sub-folder D", "value": "sub_d"},
