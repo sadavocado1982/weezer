@@ -60,8 +60,8 @@ def main():
     st.write(return_select)
 
     # Handle double-click events
-    if st.session_state.clicked_file:
-        download_file(st.session_state.clicked_file)
+    # if st.session_state.clicked_file:
+    #     download_file(st.session_state.clicked_file)
 
 
 # Run the main function
