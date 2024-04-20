@@ -23,8 +23,8 @@ def create_tree_structure():
                     "label":  "bakeing",
                     "value": "folder_e",
                     "children": [
-                        {"label": "Sub-sub-folder A", "value": "sub_sub_a"},
-                        {"label": "Sub-sub-folder B", "value": "sub_sub_b"},
+                        {"label": "turning on", "value": "sub_sub_a"},
+                        {"label": "how much time", "value": "sub_sub_b"},
                     ],
                 },
                 {"label": "finish", "value": "sub_f"},
