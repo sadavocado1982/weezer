@@ -30,6 +30,22 @@ def create_tree_structure():
                 {"label": "finish", "value": "sub_f"},
             ],
         },
+        {
+            "label": "how to cook a cookie!",
+            "value": "folder_g",
+            "children": [
+                {"label": "Ingredients", "value": "sub_h"},
+                {
+                    "label": "mixing",
+                    "value": "folder_i",
+                    "children": [
+                        {"label": "bakeing", "value": "sub_sub_c"},
+                        {"label": "how much time", "value": "sub_sub_d"},
+                    ],
+                },
+                {"label": "finish", "value": "sub_j"},
+            ],
+        },
     ]
     return nodes
 
