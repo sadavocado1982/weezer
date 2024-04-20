@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_tree_select import tree_select
+import base64
 
 # Function to create collapsible tree structure
 def create_tree_structure():
@@ -39,6 +40,21 @@ def download_file(file_name):
     # Replace with actual download logic
     st.write(f"Downloading {file_name}")
 
+
+def sidebar_bg(side_bg):
+    side_bg_ext = 'png'
+
+    st.markdown(
+      f"""
+      <style>
+      [data-testid="stSidebar"] > div:first-child {{
+          background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()});
+      }}
+      </style>
+      """,
+      unsafe_allow_html=True,
+      )
+
 # Main function
 def main():
     st.title("Interactive Tree Web App")
@@ -49,23 +65,7 @@ def main():
     # Update background and add smiling clouds if kids mode is activated
     if kids_mode:
         st.write("Kids mode activated!")
-        # Add CSS to set background image
-        st.markdown(
-            """
-            <style>
-            body {
-                background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fcolorful-pastel-rainbow-with-clouds_33447209.htm&psig=AOvVaw2guP9sierJw54l7Ysj9A8V&ust=1713716081706000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDs3oWY0YUDFQAAAAAdAAAAABAE");
-                background-size: cover;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        with st.echo():
-            st.title("CAT")
-
-            st.markdown("[![Click me](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fcolorful-pastel-rainbow-with-clouds_33447209.htm&psig=AOvVaw2guP9sierJw54l7Ysj9A8V&ust=1713716081706000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDs3oWY0YUDFQAAAAAdAAAAABAE)](https://streamlit.io)")
+        sidebar_bg('static/rainbow_nonsense.png')
 
     # Search bar
     search_query = st.text_input("Search for files")
