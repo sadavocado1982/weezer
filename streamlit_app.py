@@ -54,7 +54,7 @@ def main():
             """
             <style>
             body {
-                background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FiwbwTwR_rainbow-cloud-clip-art-rainbow-with-sun-and%2F&psig=AOvVaw3QUnNtxYc7hv_qDOEA_07p&ust=1713714042979000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODSlsuQ0YUDFQAAAAAdAAAAABAZ");
+                background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fcolorful-pastel-rainbow-with-clouds_33447209.htm&psig=AOvVaw2guP9sierJw54l7Ysj9A8V&ust=1713716081706000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDs3oWY0YUDFQAAAAAdAAAAABAE");
                 background-size: cover;
             }
             </style>
