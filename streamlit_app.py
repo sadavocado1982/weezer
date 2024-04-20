@@ -18,16 +18,16 @@ def create_tree_structure():
             "label": "how to cook a cake!",
             "value": "folder_c",
             "children": [
-                {"label": "Sub-folder D", "value": "sub_d"},
+                {"label": "Ingredients", "value": "sub_d"},
                 {
-                    "label": "Sub-folder E",
-                    "value": "sub_e",
+                    "label":  "bakeing",
+                    "value": "folder_e",
                     "children": [
                         {"label": "Sub-sub-folder A", "value": "sub_sub_a"},
                         {"label": "Sub-sub-folder B", "value": "sub_sub_b"},
                     ],
                 },
-                {"label": "Sub-folder F", "value": "sub_f"},
+                {"label": "finish", "value": "sub_f"},
             ],
         },
     ]
