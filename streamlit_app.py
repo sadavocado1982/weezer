@@ -39,7 +39,6 @@ def download_file(file_name):
     # Replace with actual download logic
     st.write(f"Downloading {file_name}")
 
-
 # Main function
 def main():
     st.title("Interactive Tree Web App")
@@ -50,7 +49,18 @@ def main():
     # Update background and add smiling clouds if kids mode is activated
     if kids_mode:
         st.write("Kids mode activated!")
-        # Add code to update background and add smiling clouds
+        # Add CSS to set background image
+        st.markdown(
+            """
+            <style>
+            body {
+                background-image: url("assets/rainbow_nonsense.png");
+                background-size: cover;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
     # Search bar
     search_query = st.text_input("Search for files")
