@@ -3,14 +3,35 @@ import streamlit as st
 
 # Function to create collapsible tree structure
 def create_tree_structure():
-    # Mocking hierarchical structure
-    st.write("Main Folder")
-    with st.tree("Subfolder 1"):
-        st.write("Leaf 1")
-        st.write("Leaf 2")
-    with st.tree("Subfolder 2"):
-        st.write("Leaf 3")
-        st.write("Leaf 4")
+    nodes = [
+        {"label": "Folder A", "value": "folder_a"},
+        {
+            "label": "Folder B",
+            "value": "folder_b",
+            "children": [
+                {"label": "Sub-folder A", "value": "sub_a"},
+                {"label": "Sub-folder B", "value": "sub_b"},
+                {"label": "Sub-folder C", "value": "sub_c"},
+            ],
+        },
+        {
+            "label": "Folder C",
+            "value": "folder_c",
+            "children": [
+                {"label": "Sub-folder D", "value": "sub_d"},
+                {
+                    "label": "Sub-folder E",
+                    "value": "sub_e",
+                    "children": [
+                        {"label": "Sub-sub-folder A", "value": "sub_sub_a"},
+                        {"label": "Sub-sub-folder B", "value": "sub_sub_b"},
+                    ],
+                },
+                {"label": "Sub-folder F", "value": "sub_f"},
+            ],
+        },
+    ]
+    return nodes
 
 
 # Function to handle file download
@@ -35,7 +56,8 @@ def main():
     search_query = st.text_input("Search for files")
 
     # Create collapsible tree structure
-    create_tree_structure()
+    return_select = create_tree_structure()
+    st.write(return_select)
 
     # Handle double-click events
     if st.session_state.clicked_file:
